@@ -13,7 +13,7 @@ if [ ! -d "$DIR" ]; then
     mkdir $DIR
 fi
 cd $DIR
-curl https://adventofcode.com/2021/day/$1/input --cookie "session=$2" > input.txt
+curl https://adventofcode.com/2022/day/$1/input --cookie "session=$2" > input.txt
 if [ ! -f "a.py" ]; then
     touch a.py
 else
