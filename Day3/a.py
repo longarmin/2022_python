@@ -11,11 +11,10 @@ def main(inp):
         break
     prio = []
   for c in common:
-    res = ord(c)-ord('a')
-    if res < 0:
-      res = ord(c) - ord('A') + 26 + 1
+    if c < 'a':
+      res = ord(c) - ord('A') + 27
     else:
-      res += 1
+      res = ord(c) - ord('a') + 1
     prio.append(res)
   print(sum(prio))
 
